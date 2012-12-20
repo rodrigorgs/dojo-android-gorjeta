@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/edt_Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="77dp"
+        android:ems="10"
+        android:hint="@string/Total"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edt_gorjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edt_Total"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="@string/Gorjeta"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_nPessoas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="@string/nPessoas"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="56dp"
+        android:layout_marginRight="42dp"
+        android:onClick="OnClickCalcular"
+        android:text="@string/BtnCalcular" />
+
+    <TextView
+        android:id="@+id/labelResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_calcular"
+        android:layout_below="@+id/edt_nPessoas"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@+id/btn_calcular"
+        android:text="TextView" />
+
+</RelativeLayout>
